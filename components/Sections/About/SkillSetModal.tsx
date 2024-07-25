@@ -77,8 +77,6 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
   const dataBaseCols = splitSkills(Skills.database)
   const uiFrameWorkCols = splitSkills(Skills['ui frameworks'])
   const productivityCols = splitSkills(Skills['productivity boost'])
-  const mobileCols = splitSkills(Skills.mobile)
-  const gameCols = splitSkills(Skills.games)
   const desktopCols = splitSkills(Skills.desktop)
   return (
     <Modal
@@ -97,13 +95,11 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
           <SkillList title="CICD centric" columns={cicdCols} />
           <SkillList title="Database and Streams" columns={dataBaseCols} />
           <SkillList title="Ui Frameworks" columns={uiFrameWorkCols} />
-          <SkillList title="Mobile Development" columns={mobileCols} />
-          <SkillList title="Game Development" columns={gameCols} />
           <SkillList title="Desktop App" columns={desktopCols} />
           <SkillList title="Productivity boosts" columns={productivityCols} />
         </ModalBody>
         <ModalFooter>
-          <Text fontSize="x-small">*Some micro frameworks not included </Text>
+          <Text fontSize="x-small">*Some frameworks are not exactly cup of tea </Text>
         </ModalFooter>
       </ModalContent>
     </Modal>

@@ -1,18 +1,18 @@
 import { IconType } from 'react-icons'
 import {
-  SiDotNet,
+  SiDotnet,
   SiJavascript,
   SiTypescript,
-  SiNodeDotJs,
+  SiNodedotjs,
   SiGraphql,
   SiApollographql,
   SiPhp,
   SiReact,
-  SiNextDotJs,
+  SiNextdotjs,
   SiRedux,
-  SiStyledComponents,
+  SiStyledcomponents,
   SiGhost,
-  SiVueDotJs,
+  SiVuedotjs,
   SiDocker,
   SiGooglecloud,
   SiCpanel,
@@ -23,8 +23,8 @@ import {
   SiMysql,
   SiMongodb,
   SiRedis,
-  SiSocketDotIo,
-  SiMaterialUi,
+  SiSocketdotio,
+  SiMaterialdesign,
   SiFramer,
   SiGit,
   SiGnubash,
@@ -32,6 +32,7 @@ import {
   SiUnity,
   SiMicrosoft,
   SiElectron,
+  SiAmazonaws 
 } from 'react-icons/si'
 import { BsQuestionSquare } from 'react-icons/bs'
 import { AiOutlineAntDesign } from 'react-icons/ai'
@@ -45,8 +46,6 @@ export type SkillCategory =
   | 'database'
   | 'ui frameworks'
   | 'productivity boost'
-  | 'mobile'
-  | 'games'
   | 'desktop'
 
 export type Skill = {
@@ -59,12 +58,8 @@ export const Skills: {
 } = {
   backend: [
     {
-      name: 'C# - .NET.Core',
-      icon: SiDotNet,
-    },
-    {
       name: 'Node',
-      icon: SiNodeDotJs,
+      icon: SiNodedotjs,
     },
     {
       name: 'Javascript (ES6+)',
@@ -74,27 +69,15 @@ export const Skills: {
       name: 'Typescript',
       icon: SiTypescript,
     },
-    {
-      name: 'Graphql (JS, C#)',
-      icon: SiGraphql,
-    },
-    {
-      name: 'PHP (Wordpress, Slim)',
-      icon: SiPhp,
-    },
   ],
   frontend: [
     {
-      name: 'React, RecoilJS',
+      name: 'React',
       icon: SiReact,
     },
     {
       name: 'NextJS',
-      icon: SiNextDotJs,
-    },
-    {
-      name: 'Apollo Graphql',
-      icon: SiApollographql,
+      icon: SiNextdotjs,
     },
     {
       name: 'Redux',
@@ -102,21 +85,13 @@ export const Skills: {
     },
     {
       name: 'VueJS',
-      icon: SiVueDotJs,
-    },
-    {
-      name: 'Ghost',
-      icon: SiGhost,
+      icon: SiVuedotjs,
     },
   ],
   database: [
     {
       name: 'PostgreSQL',
       icon: SiPostgresql,
-    },
-    {
-      name: 'MsSQL',
-      icon: SiMicrosoftsqlserver,
     },
     {
       name: 'MySQL',
@@ -126,49 +101,21 @@ export const Skills: {
       name: 'MongoDb',
       icon: SiMongodb,
     },
-    {
-      name: 'Redis',
-      icon: SiRedis,
-    },
-    {
-      name: 'SocketIO',
-      icon: SiSocketDotIo,
-    },
-    {
-      name: 'Google Pubsub',
-      icon: SiGooglecloud,
-    },
   ],
   cicd: [
     {
-      name: 'Docker',
-      icon: SiDocker,
+      name: 'AWS EC2',
+      icon: SiAmazonaws,
     },
     {
-      name: 'GCP',
-      icon: SiGooglecloud,
-    },
-    {
-      name: 'CPanel',
-      icon: SiCpanel,
-    },
-    {
-      name: 'Rancher',
-      icon: SiRancher,
-    },
-    {
-      name: 'GitlabCICD',
-      icon: SiGitlab,
-    },
-    {
-      name: 'Buildkite',
-      icon: BsQuestionSquare,
+      name: 'AWS S3',
+      icon: SiAmazonaws,
     },
   ],
   'ui frameworks': [
     {
       name: 'Styled Components',
-      icon: SiStyledComponents,
+      icon: SiStyledcomponents,
     },
     {
       name: 'AntDesign',
@@ -176,11 +123,7 @@ export const Skills: {
     },
     {
       name: 'MaterialUI',
-      icon: SiMaterialUi,
-    },
-    {
-      name: 'Framer Motion',
-      icon: SiFramer,
+      icon: SiMaterialdesign,
     },
     {
       name: 'ChakraUI',
@@ -199,26 +142,6 @@ export const Skills: {
     {
       name: 'Bash',
       icon: SiGnubash,
-    },
-    {
-      name: 'SourceTree',
-      icon: FaSourcetree,
-    },
-  ],
-  mobile: [
-    {
-      name: 'React Native',
-      icon: SiReact,
-    },
-    {
-      name: 'Web PWA',
-      icon: IoLogoPwa,
-    },
-  ],
-  games: [
-    {
-      name: 'Unity3D',
-      icon: SiUnity,
     },
   ],
   desktop: [
@@ -241,7 +164,7 @@ export const splitSkills = (srcArray: Skill[]) => {
   if (isEvenChunk) {
     chunk = arrLength / 2
   } else if (arrLength <= 5 && arrLength > 2) {
-    chunk = 3
+    chunk = 2
   }
 
   let i = 0

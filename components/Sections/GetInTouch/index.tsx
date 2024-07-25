@@ -53,11 +53,11 @@ const GetInTouch = () => {
       </Heading>
       <Text variant="description">
         Though, I am fairly introverted myself. I do reply to messages as long
-        as my human interaction battery lasts. Coding, work, movies or even weeb
+        as my human interaction battery lasts. Coding, work, movies or even web
         stuff, anything is cool. So feel free to message me on any of my social
         media or shoot me an{' '}
         <Link
-          href="mailto:marcjhon18@gmail.com"
+          href="mailto:mat57557@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
@@ -82,9 +82,7 @@ const GetInTouch = () => {
           _focus={{ boxShadow: 'none' }}
         >
           <Text as="span">
-            <Icon as={RiGithubFill} h={6} w={6} /> <br />
-            Designed and Made with <Icon as={RiHeartPulseFill} /> <br />
-            KL Lawingco <Icon as={RiCopyleftLine} /> 2021
+            Template By  KL Lawingco <Icon as={RiCopyleftLine} /> 2021
           </Text>
         </Link>
       </Box>

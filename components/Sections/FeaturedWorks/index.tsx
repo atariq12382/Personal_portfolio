@@ -44,7 +44,7 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={1}
-            title="Tobira!"
+            title="AIG HR System"
             src="/works/tobira/IphoneX-tobira.webp"
             description="Japanese social media platform for travelers to show off their
           adventure to the world. I was incharge of Front end integration, made using React, Antd and Styled Components."
@@ -58,7 +58,7 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={2}
-            title="RSV"
+            title="Auction Platform"
             description="RSV is a smart contract (ERC20) powered reservation system. I am incharge of backend using NET.Core 2.1."
             src="/works/rsv.webp"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
@@ -70,7 +70,7 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={3}
-            title="Agora School"
+            title="Proxy Browser"
             description="A quizz - reviewer LMS, I made as a freelancer. Backend were powered by PHPSlim and VueJS for Front end."
             src="/works/agora.webp"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
@@ -83,7 +83,7 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={4}
-            title="TMH Layla EC"
+            title="Travelmania"
             description="A Japanese Semi-conductor e-commerce made at my old place at IVP. I was working with backend using ASP.NET MVC"
             src="/works/tmh.webp"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
