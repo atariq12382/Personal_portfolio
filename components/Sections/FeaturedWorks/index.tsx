@@ -31,8 +31,9 @@ const FeaturedWorksSection = () => {
         Some of my works.
       </Heading>
       <Text variant="description">
-        Check out some of the works I made at freelancing, company projects and
-        even case studies.
+        Take a look at some of my work, including freelance projects, company
+        collaborations, and insightful case studies. Each piece reflects my
+        passion for creating impactful solutions!
       </Text>
 
       <MotionGrid
@@ -45,11 +46,10 @@ const FeaturedWorksSection = () => {
           <FeaturedCard
             idx={1}
             title="AIG HR System"
-            src="/works/tobira/IphoneX-tobira.webp"
-            description="Japanese social media platform for travelers to show off their
-          adventure to the world. I was incharge of Front end integration, made using React, Antd and Styled Components."
+            src="/works/hr_system.jpeg"
+            description="AIG HR System is a comprehensive SaaS solution designed to streamline HR management. From employee records and payrolls to leave management, bonuses, attendance, and request handling, it simplifies all aspects of HR, making processes more efficient and organized."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://tobira-app-test.netlify.app/"
+            ctaUrl=""
             objectPosition="right 20%"
             isMobile={isMobile}
           />
@@ -59,10 +59,10 @@ const FeaturedWorksSection = () => {
           <FeaturedCard
             idx={2}
             title="Auction Platform"
-            description="RSV is a smart contract (ERC20) powered reservation system. I am incharge of backend using NET.Core 2.1."
-            src="/works/rsv.webp"
+            description="An innovative online marketplace that connects buyers and sellers for seamless vehicle auctions. With user-friendly features and real-time bidding, it simplifies the car auction process, making it easy to find, list, and bid on vehicles."
+            src="/works/auction.jpeg"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://solution.rsv.ltd/jp"
+            ctaUrl=""
             isMobile={isMobile}
           />
         </MotionGridItem>
@@ -71,10 +71,10 @@ const FeaturedWorksSection = () => {
           <FeaturedCard
             idx={3}
             title="Proxy Browser"
-            description="A quizz - reviewer LMS, I made as a freelancer. Backend were powered by PHPSlim and VueJS for Front end."
-            src="/works/agora.webp"
+            description="a secure and private browsing solution that prioritizes user anonymity and data protection. With advanced proxy features, it enables safe internet navigation, ensuring users can explore the web without compromising their privacy."
+            src="/works/proxy.jpeg"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://dev.agora-school.com"
+            ctaUrl=""
             objectPosition="right 20%"
             isMobile={isMobile}
           />
@@ -84,10 +84,10 @@ const FeaturedWorksSection = () => {
           <FeaturedCard
             idx={4}
             title="Travelmania"
-            description="A Japanese Semi-conductor e-commerce made at my old place at IVP. I was working with backend using ASP.NET MVC"
-            src="/works/tmh.webp"
+            description="A dynamic platform designed for tour guides to showcase their portfolios, experiences, and travel packages. It empowers guides to connect with potential clients, highlighting their unique offerings and expertise in the travel industry."
+            src="/works/travelmania.jpeg"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://www.layla-ec.com/"
+            ctaUrl=""
             isMobile={isMobile}
           />
         </MotionGridItem>

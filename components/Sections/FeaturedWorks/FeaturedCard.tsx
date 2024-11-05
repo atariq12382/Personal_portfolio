@@ -7,7 +7,6 @@ import {
   Skeleton,
   Text,
   SimpleGrid,
-  Button,
   Container,
   Stack,
   useColorModeValue,
@@ -107,19 +106,6 @@ const ProjectDescription = ({
     >
       {description}
     </Text>
-    <Button
-      variant="outlineAlternative"
-      fontWeight="light"
-      fontSize={{ base: 'sm', '2xl': 'md' }}
-      size="sm"
-      as="a"
-      href={ctaUrl}
-      rel="noreferrer"
-      target="_blank"
-      marginY={{ base: 3, md: 0 }}
-    >
-      View Project
-    </Button>
   </Container>
 )
 
