@@ -82,16 +82,8 @@ const Sidebar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Tariq.
+            Tariq
           </MotionHeading>
-          {/* <MotionText
-            colorScheme="gray"
-            fontSize="smaller"
-            className={styles.marginTopForce}
-            variants={fadeInUp}
-          >
-            Or you could call me KL. That works too . . .
-          </MotionText> */}
 
           <MotionHeading
             as="h3"
@@ -112,10 +104,14 @@ const Sidebar = () => {
           >
             Hey! How nice of you to look at my personal site,
             <Text variant="emphasis" as="span">
-              {' '}
+              <br />
               Thank you!
+              <br />
             </Text>
-            <br />I am software engineer that specializes at Website Development from Backend To Frontend.
+            <br />
+            I'm a software engineer specializing in full-stack web development –
+            from the server-side backbone to the pixel-perfect front end. I turn
+            code into seamless digital experiences.
           </MotionText>
           <MotionButton
             size="lg"

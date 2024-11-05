@@ -21,7 +21,7 @@ import {
   SiNextdotjs,
   SiNodedotjs,
   SiDocker,
-  SiExpress
+  SiExpress,
 } from 'react-icons/si'
 import { GiCoffeePot } from 'react-icons/gi'
 import { IoMdOpen } from 'react-icons/io'
@@ -33,7 +33,7 @@ type ISkillSetModal = {
 const Detail = ({ onOpen }: ISkillSetModal) => {
   const emphasis = useColorModeValue('teal.500', 'cyan.200')
   const currentYear = new Date().getFullYear()
-  const professionalYears = currentYear - 2021
+  const professionalYears = currentYear - 2022
 
   return (
     <Stack
@@ -51,28 +51,33 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
       >
         What i do.
       </Heading>
+
       <Text variant="description">
-        I`ve been coding professionally for {professionalYears} years now and
-        currently working as an <b>Associate Software Engineer</b> that focuses
-        on <b>Javascript</b>, <b>mainly</b>{' '}
-        <Tooltip label="Full Stack tho ;)" aria-label="Tech Debt?" hasArrow>
+        With over {professionalYears} years of professional coding experience,
+        I'm currently diving deep as a Software Engineer specializing in
+        JavaScript, <b>mainly</b>{' '}
+        <Tooltip
+          label="Turning ideas into interactive experiences, one line of code at a time!"
+          aria-label="Tech Debt?"
+          hasArrow
+        >
           <Text as="span" variant="emphasis">
-            <b>MERN Stack</b>
+            <b>Web Development</b>
           </Text>
-        </Tooltip>{' '}
-        and even <b>Electron.js and Vue.js</b> stuff now, how time flies!
+        </Tooltip>
+        . From dynamic web development to crafting with Electron.js and Vue.js -
+        how time flies when you're building cool stuff!
         <br /> <br />
         Here are few technologies that are cup of my{' '}
         <Tooltip
-          label="Can't work without a cup of tea"
+          label="Just the right blend of skill and passion!"
           aria-label="I hate Tea!"
           hasArrow
         >
           <Text as="span" variant="emphasis">
             tea
           </Text>
-        </Tooltip>{' '}
-        .
+        </Tooltip>
       </Text>
 
       <SimpleGrid columns={2} spacing={4}>
