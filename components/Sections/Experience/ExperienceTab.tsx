@@ -106,7 +106,7 @@ const ExperienceTab = () => {
                     fontSize="lg"
                     fontWeight="bold"
                   >
-                    #{company.name}
+                    {company.name}
                   </Link>
                   <Text
                     as="span"
@@ -134,7 +134,12 @@ const ExperienceTab = () => {
                       color={emphasis}
                       display="block"
                     />
-                    <Text as="span" display="block" variant="description" style={{ textAlign: "justify" }}>
+                    <Text
+                      as="span"
+                      display="block"
+                      variant="description"
+                      style={{ textAlign: 'justify' }}
+                    >
                       {roleDesc}
                     </Text>
                   </ListItem>

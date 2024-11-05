@@ -16,11 +16,12 @@ const DetailSection = () => (
       Places i’ve worked.
     </Heading>
     <Text variant="description">
-      Since 2020, had a privilege to work with several companies that enables me
-      to hone my skills and talents. These companies will always have a special
-      place in my heart. Currently I am working with{' '}
-      <Link href="https://qbatch.com/" target="_blank" rel="noreferrer">
-        QBatch
+      Since 2022, I've had the privilege of working with some incredible
+      companies that helped me sharpen my skills and grow as a developer. Each
+      one holds a special place in my journey. Currently, I'm excited to be part
+      of the team at{' '}
+      <Link href="https://www.cogentlabs.co/" target="_blank" rel="noreferrer">
+        Cogent Labs
       </Link>
       .
     </Text>

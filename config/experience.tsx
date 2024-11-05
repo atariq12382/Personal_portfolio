@@ -1,6 +1,6 @@
 import { Link } from '@chakra-ui/react'
 
-export type Company = 'QBatch' | 'DevClub' | 'DevDen'
+export type Company = 'Cogent' | 'QBatch' | 'DevClub' | 'DevDen'
 
 export type CompanyDetail = {
   name: string
@@ -19,13 +19,43 @@ export type CompanyDetail = {
 export const Experiences: {
   [key in Company]: CompanyDetail
 } = {
+  Cogent: {
+    name: 'Cogent Labs',
+    longName: '',
+    subDetail: 'Lahore, Punjab, Pakistan',
+    url: 'https://www.cogentlabs.co/',
+    position: 'Software Engineer',
+    duration: 'October 2024 - Present',
+    logo: {
+      light: '/worked_at_logos/cogent/cogent_light.png',
+      dark: '/worked_at_logos/cogent/cogent_dark.png',
+    },
+    roles: [
+      <>
+        Quickly familiarizing myself with ongoing projects, team workflows, and
+        the tech stack at Cogent Labs.
+      </>,
+      <>
+        Collaborating closely with team members to gain insights into best
+        practices, code quality, and project-specific standards.
+      </>,
+      <>
+        Enhancing my knowledge of tools and frameworks relevant to Cogent Labs'
+        projects, with a current focus on React.
+      </>,
+      <>
+        Bringing a fresh outlook to projects, identifying areas for potential
+        improvement, and helping to optimize code structure.
+      </>,
+    ],
+  },
   QBatch: {
     name: 'QBatch',
     longName: '',
     subDetail: 'Faisalabad, Punjab, Pakistan',
-    url: 'QBatch',
+    url: 'https://qbatch.com/',
     position: 'Associate Software Engineer',
-    duration: 'July 2023 - Present',
+    duration: 'July 2023 - September 2024',
     logo: {
       light: '/worked_at_logos/qbatch/qbatch_light_logo.svg',
       dark: '/worked_at_logos/qbatch/qbatch_light_logo.svg',
@@ -106,6 +136,7 @@ export const Experiences: {
 }
 
 export const ExperiencesList = [
+  Experiences.Cogent,
   Experiences.QBatch,
   Experiences.DevClub,
   Experiences.DevDen,
