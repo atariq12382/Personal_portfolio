@@ -11,6 +11,7 @@ const Logo = () => {
   const [isLogoLoaded, setLogoLoaded] = useState(false)
   const MotionImage = motion(Image)
   const isMobile = useBreakpointValue(mobileBreakpointsMap)
+
   return (
     <AnimatePresence>
       <Link href="/" passHref>
@@ -19,7 +20,7 @@ const Logo = () => {
             className={!isMobile ? styles.logo : ''}
             boxSize={isMobile ? '30px' : '50px'}
             objectFit="cover"
-            src="./logo.png"
+            src="./logo_dark.png"
             alt="KL Lawingco Logo"
             fallbackSrc="./logo.png"
             variants={simpleOpacity}

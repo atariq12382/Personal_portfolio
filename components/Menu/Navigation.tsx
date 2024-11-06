@@ -199,6 +199,26 @@ const Navigation = () => {
               Contact
             </Button>
           </Box>
+          <Box
+            width={{ base: '100%', lg: 'auto' }}
+            textAlign={{ base: 'center', lg: 'left' }}
+            marginY={{ base: 2, lg: 0 }}
+          >
+            <Button
+              fontWeight="light"
+              variant="ghost"
+              fontSize={menuButtonSize}
+              letterSpacing={2}
+              className={btnClassName}
+              padding={2}
+              marginX={2}
+              as="a"
+              href="/Abdullah-Tariq-Software-Engineer-Resume.pdf"
+              download="Abdullah-Tariq-Software-Engineer-Resume.pdf"
+            >
+              Resume
+            </Button>
+          </Box>
           {!isMobile && (
             <Box>
               <IconButton
