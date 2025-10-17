@@ -102,33 +102,31 @@ const Sidebar = () => {
             variants={fadeInUp}
             maxWidth={{ base: '100%', lg: '80%' }}
           >
-            Hey! How nice of you to look at my personal site,
-            <Text variant="emphasis" as="span">
-              <br />
-              Thank you!
-              <br />
-            </Text>
+            Thanks for stopping by — I really appreciate it!
             <br />
-            I'm a software engineer specializing in full-stack web development –
-            from the server-side backbone to the pixel-perfect front end. I turn
-            code into seamless digital experiences.
+            <br />I specialize in full-stack development, working across React,
+            Next.js, and Node.js to build seamless digital products — from
+            robust backend APIs to polished, responsive frontends.
+            <br />
+            <br />I love turning ideas into reliable, intuitive, and
+            high-performance web experiences that make a real impact.
           </MotionText>
           <MotionButton
             size="lg"
             variant="outline"
             borderWidth="1px"
             borderRadius="0"
-            fontWeight="normal"
+            fontWeight="bold"
             fontSize="sm"
             width="120px"
             variants={simpleOpacity}
             as={'a'}
-            href="mailto:mat57557@gmail.com"
+            href="https://www.upwork.com/freelancers/~016271ccaf40bdb63b?mp_source=share"
             target="_blank"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Get in touch!
+            Hire Me!
           </MotionButton>
 
           <MotionBox d="flex" variants={simpleOpacity}>
