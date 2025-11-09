@@ -101,6 +101,7 @@ const Sidebar = () => {
             paddingRight={{ lg: '12' }}
             variants={fadeInUp}
             maxWidth={{ base: '100%', lg: '80%' }}
+            align="justify"
           >
             Thanks for stopping by — I really appreciate it!
             <br />

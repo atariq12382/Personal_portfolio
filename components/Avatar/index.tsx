@@ -1,19 +1,12 @@
 import {
   Box,
   Image as ChkImage,
-  Text,
-  Link,
   SkeletonCircle,
   useColorModeValue,
 } from '@chakra-ui/react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect } from 'react'
 import { avatarAnimation } from 'config/animations'
-
-const AvatarImages = {
-  DarkMode: '/KL_avatar.png',
-  LightMode: './KL_avatar_light.png',
-}
 
 declare global {
   interface Window {
@@ -23,20 +16,16 @@ declare global {
 
 const Avatar = () => {
   const MotionBox = motion(Box)
-  const imgAvatar = useColorModeValue(
-    AvatarImages.LightMode,
-    AvatarImages.DarkMode
-  )
+
+  const borderColor = useColorModeValue('teal.500', 'cyan.200')
+
   useEffect(() => {
-    // Some nice preloading and caching
-    const images = [AvatarImages.DarkMode, AvatarImages.LightMode]
-    const preloadedImages = images.map((imageSrc) => {
-      const img = new Image()
-      img.src = imageSrc
-      return img
-    })
-    window.preloadedPictures = preloadedImages
+    const img = new Image()
+    img.src = './profile_image.png'
+
+    window.preloadedPictures = [img]
   }, [])
+
   return (
     <AnimatePresence>
       <MotionBox
@@ -50,24 +39,16 @@ const Avatar = () => {
         exit={{ opacity: 0 }}
       >
         <ChkImage
-          src={imgAvatar}
+          src="./profile_image.png"
           alt="KL Lawingco Avatar"
           htmlWidth="250"
           htmlHeight="250"
           margin="auto"
           fallback={<SkeletonCircle height="100%" width="100%" />}
+          border="1px solid"
+          borderRadius="100%"
+          borderColor={borderColor}
         />
-        <Text textAlign="center" fontSize="smaller" variant="description">
-          Art by{' '}
-          <Link
-            href="https://twitter.com/kojiro_ai"
-            target="_blank"
-            aria-label="KojiroArt"
-            rel="noreferrer"
-          >
-            KojiroArt
-          </Link>
-        </Text>
       </MotionBox>
     </AnimatePresence>
   )

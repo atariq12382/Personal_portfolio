@@ -71,13 +71,6 @@ const SkillList = ({
   )
 }
 const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
-  const backendCols = splitSkills(Skills.backend)
-  const frontendCols = splitSkills(Skills.frontend)
-  const cicdCols = splitSkills(Skills.cicd)
-  const dataBaseCols = splitSkills(Skills.database)
-  const uiFrameWorkCols = splitSkills(Skills['ui frameworks'])
-  const productivityCols = splitSkills(Skills['productivity boost'])
-  const desktopCols = splitSkills(Skills.desktop)
   return (
     <Modal
       isOpen={isOpen}
@@ -87,19 +80,31 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
     >
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>Full Skill Set List</ModalHeader>
+        <ModalHeader>Skills/Technologies</ModalHeader>
         <ModalCloseButton />
         <ModalBody className={styles.skillModal}>
-          <SkillList title="Backend Centric" columns={backendCols} />
-          <SkillList title="Frontend Centric" columns={frontendCols} />
-          <SkillList title="CICD centric" columns={cicdCols} />
-          <SkillList title="Database and Streams" columns={dataBaseCols} />
-          <SkillList title="Ui Frameworks" columns={uiFrameWorkCols} />
-          <SkillList title="Desktop App" columns={desktopCols} />
-          <SkillList title="Productivity boosts" columns={productivityCols} />
+          <SkillList
+            title="Programming Languages"
+            columns={splitSkills(Skills.languages)}
+          />
+          <SkillList title="Frontend" columns={splitSkills(Skills.frontend)} />
+          <SkillList title="Backend" columns={splitSkills(Skills.backend)} />
+          <SkillList title="Database" columns={splitSkills(Skills.database)} />
+          <SkillList
+            title="Deployment"
+            columns={splitSkills(Skills.deployment)}
+          />
+          <SkillList title="UI Framework" columns={splitSkills(Skills.ui)} />
+          <SkillList
+            title="Productivity"
+            columns={splitSkills(Skills.productivity)}
+          />
+          <SkillList title="Desktop" columns={splitSkills(Skills.desktop)} />
         </ModalBody>
         <ModalFooter>
-          <Text fontSize="x-small">*Some frameworks are not exactly cup of tea </Text>
+          <Text fontSize="x-small">
+            *Some frameworks are not exactly cup of tea{' '}
+          </Text>
         </ModalFooter>
       </ModalContent>
     </Modal>
