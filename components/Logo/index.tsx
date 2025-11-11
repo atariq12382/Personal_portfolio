@@ -21,7 +21,7 @@ const Logo = () => {
             boxSize={isMobile ? '30px' : '50px'}
             objectFit="cover"
             src="./logo_dark.png"
-            alt="KL Lawingco Logo"
+            alt="Abdullah Tariq's Logo"
             fallbackSrc="./logo.png"
             variants={simpleOpacity}
             initial="initial"
@@ -36,7 +36,7 @@ const Logo = () => {
             objectFit="cover"
             src="./logo_light.png"
             fallbackSrc="./logo_light.png"
-            alt="KL Lawingco Logo"
+            alt="Abdullah Tariq's Logo"
             variants={simpleOpacity}
             initial="initial"
             animate={isLogoLoaded && 'animate'}

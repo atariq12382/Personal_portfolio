@@ -1,160 +1,50 @@
 import { IconType } from 'react-icons'
 import {
-  SiDotnet,
   SiJavascript,
   SiTypescript,
-  SiNodedotjs,
-  SiGraphql,
-  SiApollographql,
-  SiPhp,
+  SiPython,
+  SiCplusplus,
   SiReact,
-  SiNextdotjs,
-  SiRedux,
-  SiStyledcomponents,
-  SiGhost,
   SiVuedotjs,
-  SiDocker,
-  SiGooglecloud,
-  SiCpanel,
-  SiRancher,
-  SiGitlab,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiExpress,
+  SiNestjs,
   SiPostgresql,
-  SiMicrosoftsqlserver,
   SiMysql,
   SiMongodb,
-  SiRedis,
-  SiSocketdotio,
+  SiGithubactions,
+  SiAmazonaws,
+  SiDigitalocean,
+  SiDocker,
+  SiStyledcomponents,
+  SiAntdesign,
   SiMaterialdesign,
-  SiFramer,
+  SiChakraui,
+  SiVisualstudiocode,
   SiGit,
   SiGnubash,
-  SiVisualstudiocode,
-  SiUnity,
+  SiNotion,
   SiMicrosoft,
   SiElectron,
-  SiAmazonaws 
 } from 'react-icons/si'
-import { BsQuestionSquare } from 'react-icons/bs'
-import { AiOutlineAntDesign } from 'react-icons/ai'
-import { FaSourcetree } from 'react-icons/fa'
-import { IoLogoPwa } from 'react-icons/io5'
-
-export type SkillCategory =
-  | 'backend'
-  | 'frontend'
-  | 'cicd'
-  | 'database'
-  | 'ui frameworks'
-  | 'productivity boost'
-  | 'desktop'
+import { FaJava } from 'react-icons/fa'
+import { TbBrandCSharp } from 'react-icons/tb'
 
 export type Skill = {
   name: string
   icon: IconType
 }
 
-export const Skills: {
-  [key in SkillCategory]: Skill[]
-} = {
-  backend: [
-    {
-      name: 'Node',
-      icon: SiNodedotjs,
-    },
-    {
-      name: 'Javascript (ES6+)',
-      icon: SiJavascript,
-    },
-    {
-      name: 'Typescript',
-      icon: SiTypescript,
-    },
-  ],
-  frontend: [
-    {
-      name: 'React',
-      icon: SiReact,
-    },
-    {
-      name: 'NextJS',
-      icon: SiNextdotjs,
-    },
-    {
-      name: 'Redux',
-      icon: SiRedux,
-    },
-    {
-      name: 'VueJS',
-      icon: SiVuedotjs,
-    },
-  ],
-  database: [
-    {
-      name: 'PostgreSQL',
-      icon: SiPostgresql,
-    },
-    {
-      name: 'MySQL',
-      icon: SiMysql,
-    },
-    {
-      name: 'MongoDb',
-      icon: SiMongodb,
-    },
-  ],
-  cicd: [
-    {
-      name: 'AWS EC2',
-      icon: SiAmazonaws,
-    },
-    {
-      name: 'AWS S3',
-      icon: SiAmazonaws,
-    },
-  ],
-  'ui frameworks': [
-    {
-      name: 'Styled Components',
-      icon: SiStyledcomponents,
-    },
-    {
-      name: 'AntDesign',
-      icon: AiOutlineAntDesign,
-    },
-    {
-      name: 'MaterialUI',
-      icon: SiMaterialdesign,
-    },
-    {
-      name: 'ChakraUI',
-      icon: BsQuestionSquare,
-    },
-  ],
-  'productivity boost': [
-    {
-      name: 'VSCode',
-      icon: SiVisualstudiocode,
-    },
-    {
-      name: 'Git',
-      icon: SiGit,
-    },
-    {
-      name: 'Bash',
-      icon: SiGnubash,
-    },
-  ],
-  desktop: [
-    {
-      name: 'Windows Forms, WPF',
-      icon: SiMicrosoft,
-    },
-    {
-      name: 'Electron',
-      icon: SiElectron,
-    },
-  ],
-}
+export type SkillCategory =
+  | 'languages'
+  | 'frontend'
+  | 'backend'
+  | 'database'
+  | 'deployment'
+  | 'ui'
+  | 'productivity'
+  | 'desktop'
 
 export const splitSkills = (srcArray: Skill[]) => {
   const arrLength = srcArray.length
@@ -174,4 +64,141 @@ export const splitSkills = (srcArray: Skill[]) => {
     temporary.push(srcArray.slice(i, i + chunk))
   }
   return temporary
+}
+
+export const Skills: {
+  [key in SkillCategory]: Skill[]
+} = {
+  languages: [
+    {
+      name: 'JavaScript',
+      icon: SiJavascript,
+    },
+    {
+      name: 'TypeScript',
+      icon: SiTypescript,
+    },
+    {
+      name: 'Python',
+      icon: SiPython,
+    },
+    {
+      name: 'Java',
+      icon: FaJava,
+    },
+    {
+      name: 'C++',
+      icon: SiCplusplus,
+    },
+    {
+      name: 'C#',
+      icon: TbBrandCSharp,
+    },
+  ],
+  frontend: [
+    {
+      name: 'React.js',
+      icon: SiReact,
+    },
+    {
+      name: 'Vue.js',
+      icon: SiVuedotjs,
+    },
+    {
+      name: 'Next.js',
+      icon: SiNextdotjs,
+    },
+  ],
+  backend: [
+    {
+      name: 'Node.js',
+      icon: SiNodedotjs,
+    },
+    {
+      name: 'Express.js',
+      icon: SiExpress,
+    },
+    {
+      name: 'Nest.js',
+      icon: SiNestjs,
+    },
+  ],
+  database: [
+    {
+      name: 'PostgreSQL',
+      icon: SiPostgresql,
+    },
+    {
+      name: 'MySQL',
+      icon: SiMysql,
+    },
+    {
+      name: 'MongoDb',
+      icon: SiMongodb,
+    },
+  ],
+  deployment: [
+    {
+      name: 'Github Actions',
+      icon: SiGithubactions,
+    },
+    {
+      name: 'AWS',
+      icon: SiAmazonaws,
+    },
+    {
+      name: 'Digital Ocean',
+      icon: SiDigitalocean,
+    },
+    {
+      name: 'Docker',
+      icon: SiDocker,
+    },
+  ],
+  ui: [
+    {
+      name: 'Styled Components',
+      icon: SiStyledcomponents,
+    },
+    {
+      name: 'Ant Design',
+      icon: SiAntdesign,
+    },
+    {
+      name: 'Material UI',
+      icon: SiMaterialdesign,
+    },
+    {
+      name: 'Chakra UI',
+      icon: SiChakraui,
+    },
+  ],
+  productivity: [
+    {
+      name: 'VSCode',
+      icon: SiVisualstudiocode,
+    },
+    {
+      name: 'Git',
+      icon: SiGit,
+    },
+    {
+      name: 'Bash',
+      icon: SiGnubash,
+    },
+    {
+      name: 'Notion',
+      icon: SiNotion,
+    },
+  ],
+  desktop: [
+    {
+      name: 'Windows Forms, WPF',
+      icon: SiMicrosoft,
+    },
+    {
+      name: 'Electron',
+      icon: SiElectron,
+    },
+  ],
 }

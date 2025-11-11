@@ -213,8 +213,8 @@ const Navigation = () => {
               padding={2}
               marginX={2}
               as="a"
-              href="/Abdullah-Tariq-Software-Engineer-Resume.pdf"
-              download="Abdullah-Tariq-Software-Engineer-Resume.pdf"
+              href="/Abdullah-Tariq.pdf"
+              download="Abdullah-Tariq.pdf"
             >
               Resume
             </Button>

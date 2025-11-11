@@ -8,23 +8,18 @@ import {
   Icon,
   SimpleGrid,
   Box,
-  Tooltip,
   Stack,
   useColorModeValue,
 } from '@chakra-ui/react'
 import {
-  SiDotnet,
   SiJavascript,
   SiTypescript,
-  SiGraphql,
-  SiReact,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiDocker,
-  SiExpress,
+  SiPython,
+  SiCplusplus,
 } from 'react-icons/si'
-import { GiCoffeePot } from 'react-icons/gi'
+import { FaJava } from 'react-icons/fa'
 import { IoMdOpen } from 'react-icons/io'
+import { TbBrandCSharp } from 'react-icons/tb'
 
 type ISkillSetModal = {
   onOpen(): void
@@ -49,64 +44,95 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
           fontVariantCaps: 'small-caps',
         }}
       >
-        What i do.
+        What i Do
       </Heading>
-
-      <Text variant="description">
-        With over {professionalYears} years of professional coding experience,
-        I'm currently diving deep as a Software Engineer specializing in
-        JavaScript, <b>mainly</b>{' '}
-        <Tooltip
-          label="Turning ideas into interactive experiences, one line of code at a time!"
-          aria-label="Tech Debt?"
-          hasArrow
-        >
-          <Text as="span" variant="emphasis">
-            <b>Web Development</b>
-          </Text>
-        </Tooltip>
-        . From dynamic web development to crafting with Electron.js and Vue.js -
-        how time flies when you're building cool stuff!
-        <br /> <br />
-        Here are few technologies that are cup of my{' '}
-        <Tooltip
-          label="Just the right blend of skill and passion!"
-          aria-label="I hate Tea!"
-          hasArrow
-        >
-          <Text as="span" variant="emphasis">
-            tea
-          </Text>
-        </Tooltip>
+      <Text variant="description" align="justify">
+        With over{' '}
+        <Text as="span" variant="emphasis">
+          {professionalYears} years of hands-on experience
+        </Text>
+        , I work as a{' '}
+        <Text as="span" variant="emphasis">
+          Software Engineer
+        </Text>{' '}
+        specializing in{' '}
+        <Text as="span" variant="emphasis">
+          JavaScript
+        </Text>{' '}
+        and{' '}
+        <Text as="span" variant="emphasis">
+          modern web development
+        </Text>
+        . I focus on building{' '}
+        <Text as="span" variant="emphasis">
+          scalable
+        </Text>
+        ,{' '}
+        <Text as="span" variant="emphasis">
+          high-performance applications
+        </Text>{' '}
+        using technologies like{' '}
+        <Text as="span" variant="emphasis">
+          React
+        </Text>
+        ,{' '}
+        <Text as="span" variant="emphasis">
+          Next.js
+        </Text>
+        , and{' '}
+        <Text as="span" variant="emphasis">
+          Node.js
+        </Text>{' '}
+        — from intuitive frontends to robust backend systems.
+        <br />
+        <br />
+        Over the years, I've explored everything from{' '}
+        <Text as="span" variant="emphasis">
+          dynamic web apps
+        </Text>{' '}
+        to{' '}
+        <Text as="span" variant="emphasis">
+          Electron.js
+        </Text>{' '}
+        and{' '}
+        <Text as="span" variant="emphasis">
+          Vue.js
+        </Text>
+        , learning how to craft smooth, reliable digital experiences that users
+        love. I enjoy solving complex problems, writing clean, maintainable
+        code, and continuously refining my craft with every project I take on.
+        <br />
+        <br />
+        Here are a few programming languages that are my cup of tea:
       </Text>
 
       <SimpleGrid columns={2} spacing={4}>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiJavascript} color={emphasis} fontSize="2em" />
-            Javascript (ES6+)
+            JavaScript
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiTypescript} color={emphasis} fontSize="2em" />
-            Typescript
+            TypeScript
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNodedotjs} color={emphasis} fontSize="2em" />
-            Node
+            <ListIcon as={SiPython} color={emphasis} fontSize="2em" />
+            Pyhton
           </ListItem>
         </List>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiReact} color={emphasis} fontSize="2em" />
-            React
+            <ListIcon as={FaJava} color={emphasis} fontSize="2em" />
+            Java
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNextdotjs} color={emphasis} fontSize="2em" />
-            NextJS
+            <ListIcon as={SiCplusplus} color={emphasis} fontSize="2em" />
+            C++
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiExpress} color={emphasis} fontSize="2em" />
-            Express
+            <ListIcon as={TbBrandCSharp} color={emphasis} fontSize="2em" />
+            C#
           </ListItem>
         </List>
         <Box>
@@ -117,7 +143,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             textAlign="left"
             onClick={onOpen}
           >
-            See my full arsenal <Icon as={IoMdOpen} />
+            See my set of skills <Icon as={IoMdOpen} />
           </Text>
         </Box>
       </SimpleGrid>

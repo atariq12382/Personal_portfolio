@@ -30,15 +30,7 @@ const ExperienceTab = () => {
   const activeBordercolor = useColorModeValue('teal.500', '#97DFFC')
   const isMobile = useBreakpointValue(mobileBreakpointsMap)
 
-  const tabOrientation =
-    useBreakpointValue({
-      base: 'horizontal',
-      sm: 'horizontal',
-      md: 'vertical',
-      lg: 'vertical',
-      xl: 'vertical',
-    }) ?? ('vertical' as any)
-
+  const tabOrientation = 'horizontal'
   const tabMinWidth = useBreakpointValue({
     base: '160px',
     sm: '160px',
@@ -49,7 +41,7 @@ const ExperienceTab = () => {
   return (
     <Tabs id="experienceTabs" orientation={tabOrientation} isLazy>
       <TabList
-        width={!isMobile ? '30%' : 'auto'}
+        width={!isMobile ? '100%' : 'auto'}
         borderColor="transparent"
         overflowX={isMobile ? 'scroll' : 'auto'}
         overflowY={'hidden'}
@@ -63,11 +55,11 @@ const ExperienceTab = () => {
             minWidth={tabMinWidth}
             boxShadow="none"
             borderColor={borderColor}
-            borderLeftWidth={tabOrientation === 'vertical' ? '4px' : '0'}
+            // borderLeftWidth={tabOrientation === 'vertical' ? '4px' : '0'}
             _selected={{
               borderColor: activeBordercolor,
               boxShadow: 'none',
-              borderLeftWidth: tabOrientation === 'vertical' ? '4px' : '0',
+              // borderLeftWidth: tabOrientation === 'vertical' ? '4px' : '0',
               borderBottomWidth: tabOrientation === 'horizontal' ? '4px' : '0',
               background: 'whiteAlpha.100',
             }}

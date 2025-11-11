@@ -1,6 +1,6 @@
-import { Link } from '@chakra-ui/react'
+import { Text } from '@chakra-ui/react'
 
-export type Company = 'Cogent' | 'QBatch' | 'DevClub' | 'DevDen'
+export type Company = 'Dubizzle' | 'Cogent' | 'QBatch' | 'DevClub' | 'DevDen'
 
 export type CompanyDetail = {
   name: string
@@ -19,6 +19,47 @@ export type CompanyDetail = {
 export const Experiences: {
   [key in Company]: CompanyDetail
 } = {
+  Dubizzle: {
+    name: 'Dubizzle Labs',
+    longName: '',
+    subDetail: 'Lahore, Punjab, Pakistan',
+    url: 'https://www.dubizzlelabs.com/',
+    position: 'Software Engineer',
+    duration: 'April 2025 - September 2025',
+    logo: {
+      light: '/worked_at_logos/dubizzle/light.png',
+      dark: '/worked_at_logos/dubizzle/dark.png',
+    },
+    roles: [
+      <>
+        Contributed to development and enhancement of{' '}
+        <Text as="span" variant="emphasis">
+          Bayut and Dubizzle's internal CRM system
+        </Text>
+      </>,
+      <>
+        <Text as="span" variant="emphasis">
+          Designed and implemented multiple dashboards
+        </Text>{' '}
+        featuring interactive charts and hierarchical tables to improve data
+        visualization for internal teams
+      </>,
+      <>
+        <Text as="span" variant="emphasis">
+          Built reusable generic components
+        </Text>{' '}
+        integrating third-party libraries (Drag-and-Drop, React Hook Form,
+        Redux) to streamline development and reduce duplication
+      </>,
+      <>
+        <Text as="span" variant="emphasis">
+          Mentored and trained new associates
+        </Text>
+        , leading onboarding sessions and providing codebase guidance to
+        accelerate their contributions
+      </>,
+    ],
+  },
   Cogent: {
     name: 'Cogent Labs',
     longName: '',
@@ -27,25 +68,41 @@ export const Experiences: {
     position: 'Software Engineer',
     duration: 'October 2024 - Present',
     logo: {
-      light: '/worked_at_logos/cogent/cogent_light.png',
-      dark: '/worked_at_logos/cogent/cogent_dark.png',
+      light: '/worked_at_logos/cogent/light.png',
+      dark: '/worked_at_logos/cogent/dark.png',
     },
     roles: [
       <>
-        Quickly familiarizing myself with ongoing projects, team workflows, and
-        the tech stack at Cogent Labs.
+        <Text as="span" variant="emphasis">
+          Boosted App Performance by 40%
+        </Text>{' '}
+        by restructuring legacy React components and optimizing WebSocket
+        reconnection logic, reducing unnecessary API calls by 30% and cutting
+        real-time data latency by 25%.
       </>,
       <>
-        Collaborating closely with team members to gain insights into best
-        practices, code quality, and project-specific standards.
+        <Text as="span" variant="emphasis">
+          Led a 3-member cross-functional team
+        </Text>{' '}
+        to deliver a mission-critical feature 2 weeks ahead of schedule,
+        improving user engagement metrics by 15% through iterative feedback
+        loops and Agile task prioritization.
       </>,
       <>
-        Enhancing my knowledge of tools and frameworks relevant to Cogent Labs'
-        projects, with a current focus on React.
+        <Text as="span" variant="emphasis">
+          Accelerated onboarding efficiency
+        </Text>{' '}
+        by mastering 2 ongoing projects and team workflows, contributing to key
+        feature deployments within the probation period while adhering to 100%
+        of code quality standards.
       </>,
       <>
-        Bringing a fresh outlook to projects, identifying areas for potential
-        improvement, and helping to optimize code structure.
+        <Text as="span" variant="emphasis">
+          Reduced production bugs by 25%
+        </Text>{' '}
+        in Q3 by collaborating with senior developers to implement testing
+        frameworks and code review best practices, conducting 20+ reviews to
+        enforce project-specific standard
       </>,
     ],
   },
@@ -57,29 +114,81 @@ export const Experiences: {
     position: 'Associate Software Engineer',
     duration: 'July 2023 - September 2024',
     logo: {
-      light: '/worked_at_logos/qbatch/qbatch_light_logo.svg',
-      dark: '/worked_at_logos/qbatch/qbatch_light_logo.svg',
+      light: '/worked_at_logos/qbatch/light.png',
+      dark: '/worked_at_logos/qbatch/dark.png',
     },
     roles: [
       <>
-        Spearheaded the development and deployment of 3+ scalable web
-        applications using the MERN stack, significantly enhancing user
-        experience and performance.
+        <Text as="span" variant="emphasis">
+          Spearheaded development of 3+ scalable MERN stack web apps
+        </Text>
+        , improving user experience by reducing page load time by{' '}
+        <Text as="span" variant="emphasis">
+          40%
+        </Text>{' '}
+        and increasing app responsiveness by{' '}
+        <Text as="span" variant="emphasis">
+          25%
+        </Text>{' '}
+        through optimized state management and server-side rendering.
       </>,
       <>
-        Pioneered the Proxy Browser project, achieving total user privacy and
-        integrating unique features like extensions and theme settings,
-        surpassing the capabilities of competitors, leading to a 30% increase in
-        user satisfaction and experience.
+        <Text as="span" variant="emphasis">
+          Pioneered the Proxy Browser project
+        </Text>
+        , achieving{' '}
+        <Text as="span" variant="emphasis">
+          100% user privacy compliance
+        </Text>{' '}
+        and integrating{' '}
+        <Text as="span" variant="emphasis">
+          custom extensions/themes
+        </Text>
+        , which boosted user satisfaction by{' '}
+        <Text as="span" variant="emphasis">
+          30%
+        </Text>{' '}
+        and drove a{' '}
+        <Text as="span" variant="emphasis">
+          25% increase in monthly active users
+        </Text>
+        within 6 months.
       </>,
       <>
-        Developed a comprehensive Node Express backend boilerplate, setting the
-        foundation for future projects and standardizing development practices
-        within the company, reducing initial project setup time by 50%.
+        <Text as="span" variant="emphasis">
+          Developed a Node.js/Express backend boilerplate
+        </Text>{' '}
+        adopted by{' '}
+        <Text as="span" variant="emphasis">
+          8+ projects
+        </Text>
+        , reducing initial setup time by{' '}
+        <Text as="span" variant="emphasis">
+          50%
+        </Text>{' '}
+        (from 40 to 20 hours per project) and standardizing practices for{' '}
+        <Text as="span" variant="emphasis">
+          90% of engineering teams
+        </Text>
+        .
       </>,
       <>
-        Experienced in setting up EC2 servers and deploying applications,
-        enhancing deployment efficiency by 20%.
+        <Text as="span" variant="emphasis">
+          Streamlined deployment processes
+        </Text>{' '}
+        by configuring{' '}
+        <Text as="span" variant="emphasis">
+          20+ AWS EC2 instances
+        </Text>
+        , cutting deployment time by{' '}
+        <Text as="span" variant="emphasis">
+          20%
+        </Text>{' '}
+        (from 2 hours to 1.6 hours) and enabling{' '}
+        <Text as="span" variant="emphasis">
+          50+ automated deployments/month
+        </Text>{' '}
+        with zero downtime.
       </>,
     ],
   },
@@ -91,8 +200,8 @@ export const Experiences: {
     position: 'Junior Software Engineer',
     duration: 'December 2022 - July 2023',
     logo: {
-      light: '/worked_at_logos/devclub/devclub_light.png',
-      dark: '/worked_at_logos/devclub/devclub_dark.png',
+      light: '/worked_at_logos/devclub/light.png',
+      dark: '/worked_at_logos/devclub/dark.png',
     },
     roles: [
       <>
@@ -118,8 +227,8 @@ export const Experiences: {
     position: 'Intern',
     duration: 'June 2022 - August 2022',
     logo: {
-      light: '/worked_at_logos/devden/devden_light.png',
-      dark: '/worked_at_logos/devden/devden_light.png',
+      light: '/worked_at_logos/devden/light.png',
+      dark: '/worked_at_logos/devden/dark.png',
     },
     roles: [
       <>
@@ -136,6 +245,7 @@ export const Experiences: {
 }
 
 export const ExperiencesList = [
+  Experiences.Dubizzle,
   Experiences.Cogent,
   Experiences.QBatch,
   Experiences.DevClub,
