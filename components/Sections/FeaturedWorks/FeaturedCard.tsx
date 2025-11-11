@@ -103,6 +103,7 @@ const ProjectDescription = ({
       alignSelf={isLeft ? 'flex-end' : 'flex-start'}
       wordBreak="break-word"
       paddingY={{ base: 3, md: 0 }}
+      align="justify"
     >
       {description}
     </Text>

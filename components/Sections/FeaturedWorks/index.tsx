@@ -6,13 +6,20 @@ import {
   Grid,
   GridItem,
   useBreakpointValue,
+  Container,
+  Button,
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import FeaturedCard from './FeaturedCard'
-import { fadeInUpSlower, galleryStagger } from 'config/animations'
+import {
+  fadeInUpSlower,
+  galleryStagger,
+  simpleOpacity,
+} from 'config/animations'
 import { mobileBreakpointsMap } from 'config/theme'
 const MotionGrid = motion(Grid)
 const MotionGridItem = motion(GridItem)
+const MotionButton = motion(Button)
 
 const FeaturedWorksSection = () => {
   const isMobile = useBreakpointValue(mobileBreakpointsMap)
@@ -30,10 +37,12 @@ const FeaturedWorksSection = () => {
       >
         Some of my works.
       </Heading>
-      <Text variant="description">
-        Take a look at some of my work, including freelance projects, company
-        collaborations, and insightful case studies. Each piece reflects my
-        passion for creating impactful solutions!
+      <Text variant="description" align="justify">
+        Here's a glimpse into the projects I've built across QBatch, Dubizzle
+        Labs, Cogent Labs, and my freelance collaborations. From scalable
+        front-end systems to full web experiences crafted with React, Next.js,
+        and TypeScript, each project reflects my focus on clean architecture,
+        performance, and creating products people actually enjoy using.
       </Text>
 
       <MotionGrid
@@ -92,6 +101,29 @@ const FeaturedWorksSection = () => {
           />
         </MotionGridItem>
       </MotionGrid>
+      <Container
+        maxWidth="100%"
+        width="100%"
+        display="flex"
+        justifyContent="center"
+      >
+        <MotionButton
+          size="lg"
+          variant="outline"
+          borderWidth="1px"
+          borderRadius="0"
+          fontWeight="bold"
+          fontSize="sm"
+          variants={simpleOpacity}
+          as={'a'}
+          href="https://github.com/atariq12382?tab=repositories"
+          target="_blank"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          View Full Portfolio
+        </MotionButton>
+      </Container>
     </Stack>
   )
 }

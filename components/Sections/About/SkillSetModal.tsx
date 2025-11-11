@@ -14,7 +14,6 @@ import {
   SimpleGrid,
   useColorModeValue,
   Divider,
-  Text,
 } from '@chakra-ui/react'
 import styles from './styles.module.css'
 import { Skill, Skills, splitSkills } from 'config/skills'
@@ -101,11 +100,7 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
           />
           <SkillList title="Desktop" columns={splitSkills(Skills.desktop)} />
         </ModalBody>
-        <ModalFooter>
-          <Text fontSize="x-small">
-            *Some frameworks are not exactly cup of tea{' '}
-          </Text>
-        </ModalFooter>
+        <ModalFooter></ModalFooter>
       </ModalContent>
     </Modal>
   )

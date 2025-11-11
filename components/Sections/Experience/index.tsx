@@ -1,5 +1,5 @@
 import { memo } from 'react'
-import { Heading, Text, Stack, Link } from '@chakra-ui/react'
+import { Heading, Text, Stack } from '@chakra-ui/react'
 import ExperienceTab from './ExperienceTab'
 const DetailSection = () => (
   <Stack
@@ -13,19 +13,25 @@ const DetailSection = () => (
         fontVariantCaps: 'small-caps',
       }}
     >
-      Places i’ve worked.
+      Experience
     </Heading>
     <Text variant="description">
-      Since 2022, I've had the privilege of working with some incredible
-      companies that helped me sharpen my skills and grow as a developer. Each
-      one holds a special place in my journey. Currently, I'm excited to be part
-      of the team at{' '}
-      <Link href="https://www.cogentlabs.co/" target="_blank" rel="noreferrer">
+      Since 2022, I've had the opportunity to work with companies like{' '}
+      <Text as="span" variant="emphasis">
+        QBatch
+      </Text>
+      ,{' '}
+      <Text as="span" variant="emphasis">
         Cogent Labs
-      </Link>
-      .
+      </Text>
+      , and now{' '}
+      <Text as="span" variant="emphasis">
+        Dubizzle Labs
+      </Text>
+      , each shaping a different part of my growth as a developer. From building
+      scalable frontends to contributing to high-impact product features, every
+      role has pushed me to level up.
     </Text>
-
     <ExperienceTab />
   </Stack>
 )

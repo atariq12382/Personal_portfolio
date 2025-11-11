@@ -52,14 +52,14 @@ const GetInTouch = () => {
         </Text>
       </Heading>
       <Text variant="description">
-        Though I'm fairly introverted, I'm always open to a good conversation -
-        as long as my human interaction battery lasts! Whether it's coding,
-        work, movies, or anything web-related, I'm game. Feel free to reach out
-        via social media or shoot me an{' '}
+        I'm introverted by default, but always up for a good conversation while
+        my social battery cooperates. If you want to talk code, projects,
+        design, films, or anything happening on the web, I'm all in. Reach out
+        on social media or drop me an{' '}
         <Link href="mailto:mat57557@gmail.com" target="_blank" rel="noreferrer">
           email
-        </Link>
-        . I promise I'll respond (eventually)!
+        </Link>{' '}
+        — I'll reply as soon as I escape my developer tunnel.
       </Text>
 
       <Box
@@ -78,8 +78,8 @@ const GetInTouch = () => {
           _focus={{ boxShadow: 'none' }}
         >
           <Text as="span">
-            Portfolio built using a Template by KL Lawingco{' '}
-            <Icon as={RiCopyleftLine} /> 2021.
+            Built using a Template by KL Lawingco <Icon as={RiCopyleftLine} />{' '}
+            2021.
           </Text>
         </Link>
       </Box>
